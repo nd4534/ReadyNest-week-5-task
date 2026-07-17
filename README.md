@@ -16,6 +16,7 @@ A production-grade, high-scale predictive machine learning intelligence system b
 
 ## 📁 File Architecture Structure
 
+```text
 readynest_task_5/
 ├── data/
 │   ├── cleaned_customer_data.csv  # Processed dataset (~3M rows)
@@ -31,6 +32,7 @@ readynest_task_5/
 ├── .python-version                # Enforced execution runtime environment
 ├── README.md                      # Project documentation handbook (this file)
 └── requirements.txt               # Application package dependencies list
+```text
 
 ---
 
