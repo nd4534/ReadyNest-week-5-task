@@ -32,6 +32,7 @@ readynest_task_5/
 ├── .python-version                # Enforced execution runtime environment
 ├── README.md                      # Project documentation handbook (this file)
 └── requirements.txt               # Application package dependencies list
+'''text
 
 ---
 
