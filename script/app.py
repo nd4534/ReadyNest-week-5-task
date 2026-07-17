@@ -14,7 +14,7 @@ st.write("---")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/cleaned_customer_data.csv", nrows=100000)
+    return pd.read_csv("data/cleaned_customer_data.csv")
 
 df = load_data()
 
