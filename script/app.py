@@ -70,8 +70,8 @@ tab_routing, tab_eda, tab_report = st.tabs([
 # ==========================================
 with tab_routing:
     try:
-        model = joblib.load(r'E:\readynest_task_5\data\xgboost_loyalty_model.pkl')
-        features = joblib.load(r'E:\readynest_task_5\data\model_features.pkl')
+        model = joblib.load('data/xgboost_loyalty_model.pkl')
+        features = joblib.load('data/model_features.pkl')
         
         col_input, col_map = st.columns([1, 2])
         
