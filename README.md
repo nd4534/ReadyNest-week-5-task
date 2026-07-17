@@ -14,28 +14,6 @@ A production-grade, high-scale predictive machine learning intelligence system b
 
 ---
 
-## 📁 File Architecture Structure
-
-```text
-readynest_task_5/
-├── data/
-│   ├── cleaned_customer_data.csv  # Processed dataset (~3M rows)
-│   ├── model_features.pkl         # Saved production model feature list structure
-│   ├── train.csv                  # Original raw data ingestion file
-│   └── xgboost_loyalty_model.pkl  # Serialized XGBoost regression artifact
-├── script/
-│   ├── app.py                     # Main Streamlit dashboard source code
-│   ├── etl_pipeline.py            # Data cleaning and feature engineering pipeline
-│   └── ml_model.py                # Model training and evaluation script
-├── .gitignore                     # Git untracked file configurations
-├── .gitattributes                 # Git LFS pipeline configuration rules
-├── .python-version                # Enforced execution runtime environment
-├── README.md                      # Project documentation handbook (this file)
-└── requirements.txt               # Application package dependencies list
-```text
-
----
-
 ## 🚀 Quick-Start Deployment Guide
 
 ### 1. Environment Initialization
@@ -69,3 +47,24 @@ To run this pipeline locally:
 1. Download the raw dataset from the [Kaggle New York City Taxi Fare Prediction](https://www.kaggle.com/c/new-york-city-taxi-fare-prediction/data) page.
 2. Place the downloaded `train.zip` archive directly inside your local environment path: `E:\readynest_task_5\data\`.
 3. Run `python script/etl_pipeline.py` to generate the filtered vector layers.
+
+---
+
+## 📁 File Architecture Structure
+
+```text
+readynest_task_5/
+├── data/
+│   ├── cleaned_customer_data.csv  # Processed dataset (~3M rows)
+│   ├── model_features.pkl         # Saved production model feature list structure
+│   ├── train.csv                  # Original raw data ingestion file
+│   └── xgboost_loyalty_model.pkl  # Serialized XGBoost regression artifact
+├── script/
+│   ├── app.py                     # Main Streamlit dashboard source code
+│   ├── etl_pipeline.py            # Data cleaning and feature engineering pipeline
+│   └── ml_model.py                # Model training and evaluation script
+├── .gitignore                     # Git untracked file configurations
+├── .gitattributes                 # Git LFS pipeline configuration rules
+├── .python-version                # Enforced execution runtime environment
+├── README.md                      # Project documentation handbook (this file)
+└── requirements.txt               # Application package dependencies list
