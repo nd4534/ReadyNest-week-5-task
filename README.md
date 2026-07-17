@@ -14,23 +14,24 @@ A production-grade, high-scale predictive machine learning intelligence system b
 
 ---
 
-## 📂 File Architecture Structure
+## 📁 File Architecture Structure
 
-READYNEST_TASK_5/
-│
+```text
+readynest_task_5/
 ├── data/
-│   ├── cleaned_customer_data.csv    # Processed database (~3M rows)
-│   ├── model_features.pkl           # Saved production model feature list structure
-│   ├── train.csv                    # Original raw data ingestion file
-│   └── xgboost_loyalty_model.pkl    # Serialized XGBoost regression artifact
-│
+│   ├── cleaned_customer_data.csv  # Processed dataset (~3M rows)
+│   ├── model_features.pkl         # Saved production model feature list structure
+│   ├── train.csv                  # Original raw data ingestion file
+│   └── xgboost_loyalty_model.pkl  # Serialized XGBoost regression artifact
 ├── script/
-│   ├── app.py                       # Main Streamlit dashboard source code
-│   ├── etl_pipeline.py              # Data cleaning and feature engineering pipeline
-│   └── ml_model.py                  # Model training and evaluation script
-│
-├── README.md                        # Documentation handbook (this file)
-└── requirements.txt                 # Application package dependencies list
+│   ├── app.py                     # Main Streamlit dashboard source code
+│   ├── etl_pipeline.py            # Data cleaning and feature engineering pipeline
+│   └── ml_model.py                # Model training and evaluation script
+├── .gitignore                     # Git untracked file configurations
+├── .gitattributes                 # Git LFS pipeline configuration rules
+├── .python-version                # Enforced execution runtime environment
+├── README.md                      # Project documentation handbook (this file)
+└── requirements.txt               # Application package dependencies list
 
 ---
 
