@@ -16,7 +16,6 @@ A production-grade, high-scale predictive machine learning intelligence system b
 
 ## 📁 File Architecture Structure
 
-```text
 readynest_task_5/
 ├── data/
 │   ├── cleaned_customer_data.csv  # Processed dataset (~3M rows)
