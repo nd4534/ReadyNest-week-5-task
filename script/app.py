@@ -125,8 +125,9 @@ with tab_routing:
                 dropoff_address = d_addr
                 
             else:
-                p_lat = st.number_input("Pickup Latitude", 40.50, 40.90, 40.7589, format="%.6f")
-                p_lon = st.number_input("Pickup Longitude", -74.05, -73.70, -73.9851, format="%.6f")
+                # Added unique keys to pickup coordinate inputs
+                p_lat = st.number_input("Pickup Latitude", 40.50, 40.90, 40.7589, format="%.6f", key="coord_pickup_latitude_root")
+                p_lon = st.number_input("Pickup Longitude", -74.05, -73.70, -73.9851, format="%.6f", key="coord_pickup_longitude_root")
                 all_stops_coords.append((p_lat, p_lon))
                 map_pins_list.append({"name": "🛫 START PICKUP", "latitude": p_lat, "longitude": p_lon, "color": [46, 204, 113, 255]})
                 
@@ -138,8 +139,9 @@ with tab_routing:
                     map_pins_list.append({"name": f"📍 INTERMEDIATE STOP #{i+1}", "latitude": s_lat, "longitude": s_lon, "color": [241, 196, 15, 255]})
                 
                 st.markdown("**🛬 Destination Parameters**")
-                d_lat = st.number_input("Dropoff Latitude", 40.50, 40.90, 40.7484, format="%.6f")
-                d_lon = st.number_input("Dropoff Longitude", -74.05, -73.70, -73.9784, format="%.6f")
+                # Added unique keys to dropoff coordinate inputs
+                d_lat = st.number_input("Dropoff Latitude", 40.50, 40.90, 40.7484, format="%.6f", key="coord_dropoff_latitude_root")
+                d_lon = st.number_input("Dropoff Longitude", -74.05, -73.70, -73.9784, format="%.6f", key="coord_dropoff_longitude_root")
                 all_stops_coords.append((d_lat, d_lon))
                 map_pins_list.append({"name": "🛬 FINAL DROPOFF", "latitude": d_lat, "longitude": d_lon, "color": [231, 76, 60, 255]})
 
